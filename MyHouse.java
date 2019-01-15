@@ -16,6 +16,7 @@ public class MyHouse
     private Circle doorUp;
     private Square doorDown;
     private Circle doorH;
+    private Tree tree1;
 
     
     /**
@@ -31,6 +32,7 @@ public class MyHouse
         doorUp = new Circle();
         doorDown = new Square();
         doorH = new Circle();
+        tree1 = new Tree (0,0);
         //invoke the method to draw the house
         drawHouse();
     }
