@@ -38,29 +38,29 @@ public class Tree
      */
     public void drawTree(int x, int y)
     {
-        // Put the roof
-        root.moveHorizontal(450);
-        root.changeColor("red");
-        root.moveVertical(480);
+        // Put the root
+        root.moveHorizontal(x-25);
+        root.changeColor("brown");
+        root.moveVertical(y-20);
         root.makeVisible();
         
         //Put the leaf1
-        leaf1.moveHorizontal(475);
-        leaf1.moveVertical(490);
+        leaf1.moveHorizontal(x);
+        leaf1.moveVertical(y-10);
         leaf1.changeColor("green");
         leaf1.changeSize(30, 60);
         leaf1.makeVisible();
         
         //Put the leaf2
-        leaf2.moveHorizontal(475);
-        leaf2.moveVertical(475);
+        leaf2.moveHorizontal(x);
+        leaf2.moveVertical(y-25);
         leaf2.changeColor("green");
         leaf2.changeSize(30, 60);
         leaf2.makeVisible();
         
         //Put the leaf3
-        leaf3.moveHorizontal(475);
-        leaf3.moveVertical(460);
+        leaf3.moveHorizontal(x);
+        leaf3.moveVertical(y-40);
         leaf3.changeColor("green");
         leaf3.changeSize(30, 60);
         leaf3.makeVisible();
