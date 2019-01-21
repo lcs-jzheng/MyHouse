@@ -16,9 +16,10 @@ public class MyHouse
     private Circle doorUp;
     private Square doorDown;
     private Circle doorH;
+    private Square chim;
     private Tree tree1;
     private Tree tree2;
-
+    private Tree tree3;
     
     /**
      * The job of a constructor is to intialize all the instance variables.
@@ -33,8 +34,10 @@ public class MyHouse
         doorUp = new Circle();
         doorDown = new Square();
         doorH = new Circle();
+        chim = new Square();
         tree1 = new Tree(0,250);
         tree2 = new Tree(200,250);
+        tree3 = new Tree(125,70);
         //invoke the method to draw the house
         drawHouse();
     }
@@ -47,7 +50,7 @@ public class MyHouse
         // Put the sun in position
         sun.changeColor("yellow");
         sun.moveVertical(-100);
-        sun.moveHorizontal(220);
+        sun.moveHorizontal(320);
         sun.changeSize(100);
         sun.makeVisible();
         
@@ -90,6 +93,11 @@ public class MyHouse
         doorH.changeSize(5);
         doorH.moveVertical(220);
         doorH.moveHorizontal(148);
+        
+        //Make the chimney of the house
+        chim.makeVisible();
+        chim.moveVertical(90);
+        chim.moveHorizontal(115);
     }
 }
 

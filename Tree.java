@@ -2,7 +2,7 @@
 /**
  * Creates an instance of a Tree.
  *
- * @author R. Gordon
+ * @author J. Zheng
  * @version January 15, 2019
  */
 public class Tree
